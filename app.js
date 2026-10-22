@@ -79,7 +79,7 @@
   }
 
   function footer(home) {
-    if (home) return `<footer class="site-footer home-footer"><div class="wrap footer-inner"><p class="disclosure">${inline(CONTENT[current.lang].home.note)}</p><div class="footer-signature"><span lang="en">Astrid Zhang</span><span>2026</span></div></div></footer>`;
+    if (home) return `<footer class="site-footer home-footer"><div class="wrap footer-inner"><p class="disclosure">${inline(CONTENT[current.lang].home.note)}<span class="cover-disclosure">${inline(CONTENT[current.lang].home.coverNote)}</span></p><div class="footer-signature"><span lang="en">Astrid Zhang</span><span>2026</span></div></div></footer>`;
     const l = labels[current.lang];
     const index = routes.indexOf(current.page);
     const previous = index === 1 ? 3 : index - 1;
@@ -243,7 +243,7 @@
     document.body.dataset.page = keys[index] || 'missing';
     document.documentElement.lang = current.lang === 'zh' ? 'zh-CN' : 'en';
     document.title = `Astrid Zhang — ${index > 0 ? CONTENT[current.lang][keys[index]].title : l.title}`;
-    document.querySelector('meta[name="description"]').content = index > 0 ? CONTENT[current.lang][keys[index]].intro : CONTENT[current.lang].home.note;
+    document.querySelector('meta[name="description"]').content = index > 0 ? CONTENT[current.lang][keys[index]].intro : CONTENT[current.lang].home.note + CONTENT[current.lang].home.coverNote;
     if (!(samePage && !languageChanged)) {
       const view = index === 0 ? homeView() : index > 0 ? detailView(index) : `<main id="main" tabindex="-1" class="wrap not-found"><h1 id="page-title">${l.missing}</h1><p>${l.missingText}</p><a href="${routeURL('home')}">${l.back}</a></main>${footer(false)}`;
       const pageView = app.querySelector('#page-view');

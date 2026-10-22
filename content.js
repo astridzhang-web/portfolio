@@ -29,7 +29,8 @@ const CONTENT = {
           "description": "核查手持风扇的续航、噪声及售后信息，整理需向供应商确认的事项，并优化部分面向海外买家的英文产品文案。"
         }
       ],
-      "note": "以上为基于公开资料及模拟业务场景完成的个人学习项目，不涉及真实客户往来、订单或产品实测。项目封面为 AI 生成的示意图。"
+      "note": "以上为基于公开资料及模拟业务场景完成的个人学习项目，不涉及真实客户往来、订单或产品实测。",
+      "coverNote": "项目封面为 AI 生成的示意图。"
     },
     "led": {
       "title": "欧洲客户询盘与样品跟进",
@@ -565,7 +566,8 @@ const CONTENT = {
           "description": "Identified gaps in runtime, noise and after-sales information, prepared questions for supplier confirmation, and revised selected buyer-facing English descriptions."
         }
       ],
-      "note": "These independent learning projects use public information and simulated business scenarios. They involve no actual customer correspondence, orders or product testing. The research and copy examples illustrate the working approach, not verified commercial outcomes. Project covers are AI-generated illustrations."
+      "note": "These independent learning projects use public information and simulated business scenarios. They involve no actual customer correspondence, orders or product testing. The research and copy examples illustrate the working approach, not verified commercial outcomes.",
+      "coverNote": " Project covers are AI-generated illustrations."
     },
     "led": {
       "title": "EU Client Inquiry & Sample Follow-up",

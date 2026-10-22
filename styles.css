@@ -331,6 +331,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--primary); outli
   .disclosure { font-size: 13px; line-height: 1.65; }
   .home-footer .footer-signature { justify-content: space-between; margin-top: 42px; padding-right: 24px; font-size: 12px; }
   .home-footer .footer-signature > span:first-child { display: inline; }
+  .home-footer .cover-disclosure { display: none; }
   .case-intro { padding-top: 32px; }
   .case-intro .overline { font-size: 11px; }
   .desktop-overline, .case-tag { display: none; }
